@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="user">
+            <img src="profile1.jpg" id="myImg" alt="">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+            <script>
+                
+                var modal = document.getElementById("myModal");
+
+
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+
+             
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            </script>
+
+            <h3 class="name">Aditya</h3>
+    
+            <a href="https://github.com/adityavitv" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-tomar-3481a826a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="thegokueffect01@gmail.com" target="_blank"> <i class="fa fa-envelope"></i></a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Connect</a></li>
+  
+                <button id="theme-toggle" class="btn btn-link btn-sm ml-2 small" type="button">
+                    <span class="d-block-light d-none"><a> <i class="fa fa-moon-o"></i></a></span>
+                    
+                   </button>
+            </ul>
+            
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+          
+        <h3>Hello World !</h3>
+        <h1>I'M <span >Aditya Tomar</span></h1>
+
+        <p  >
+            I am Engineering Student, App Developer and UI Designer ! &nbsp;
+            I'm Always Ready For Participation In Hackathons!
+            3 at GSSOC'22
+        </p>
+        <a href="#about"><button class="btn">About Me <i class="fas fa-user"></i></button></a>
+        
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> Let Me<span> Introduce</span> MySelf </h1>
+
+        <div class="row">
+
+            <div class="info">
+
+                <h3> <span> Name : </span>Aditya Tomar</h3>
+                <h3> <span> Date of Birth : </span> 01<sup>st</sup>&nbsp; December 2005</h3>
+                <h3> <span> Qualification : </span> B. Tech (Pursuing) </h3>
+                <h3> <span> Email : </span> thegokueffect01@gmail.com </h3>
+                <br><br><br><br><br><br><br><br><br><br><br>
+
+                <a href="cv.pdf" target="_blank"><button class="btn"> Download CV <i class="fas fa-download"></i>
+                    </button></a>
+                    <!-- <button  class="btn" id="mybtn">Change Style</button> -->
+            </div>
+
+
+            <div class="counter">
+
+                <div class="skill-bars">
+                    <div class="bar">
+                        <div class="info">
+                            <span>C++</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="bar">
+              <div class="info">
+                <span>C++</span>
+              </div>
+              <div class="progress-line jquery">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>C</span>
+              </div>
+              <div class="progress-line python">
+                <span></span>
+              </div>
+            </div>
+             -->
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>UI design</span>
+                        </div>
+                        <div class="progress-line mysql">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML & CSS</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line JavaScript">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> My <span>Education</span> </h1>
+
+        <div class="box-container">
+
+            <div class="timeline">
+                <div class="container left">
+                    <div class="date">Aug 2027<br>VIT<br>University</div>
+
+
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <h2>B. Tech </h2>
+                        <p>
+                            <i>Computer Science and Engineering</i> <br>
+                            Vellore Institute of Technology
+                        </p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="date">May 2023<br>CBSE Board</div>
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <h2>S.S.C.</h2>
+                        <p>
+                            <i>Science</i> <br>
+                            Kendriya Vidyalaya Sangathan
+                        </p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="date">May 2021<br>CBSE Board</div>
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <h2>H.S.C.</h2>
+                        <p>
+
+                            Kendriya Vidyalaya Sangathan
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+    <!-- portfolio section starts -->
+
+    <section class="portfolio" id="portfolio">
+
+ 
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>Contact</span> Me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">Contact Info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> thegokueffect01@gmail.com </h3>
+
+                    <h3> <i class="fas fa-map-marker-alt"></i> Vellore , Tamil Nadu 632014                      . </h3>
+                </div>
+
+            </div>
+
+            <form action="https://formsubmit.co/el/raduhu" method="POST" id="contactForm">
+
+                <input type="text" placeholder="name" class="box" name="Name" id="Name">
+                <input type="email" placeholder="email" class="box" name="Email" id="Email">
+                <input type="text" placeholder="subject" class="box" name="subject" id="Subject">
+                <input class="box message" placeholder="Message" cols="30" rows="10" name="Message" id="Msg">
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+            </form>
+        
+        
+
+        </div>
+        <div class="fot">      
+           <h3 class="fa fa-copyright"> Copyright Aditya Tomar </h3>
+            <a href="https://www.instagram.com/arcdeliospeaks/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-tomar-3481a826a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/arcdeliospeaks" target="_blank"><i class="fa fa-twitter"></i></a>
+
+
+        </div>
+
+    </section>
+
+   
+    <!-- contact section ends -->
+
+
+    <!-- scroll top button  -->
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script>
+        $("#mybtn").on("click",function(){
+  window.alert("sometext");
+  $('link[href="css/styles.css"]').attr('link[href="css/styles2.css"]');
+});
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</body>
+
+</html>
